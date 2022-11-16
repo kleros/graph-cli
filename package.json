@@ -1,9 +1,10 @@
 {
-  "name": "@graphprotocol/graph-cli",
-  "version": "0.36.0",
+  "name": "@kleros/graph-cli",
+  "version": "0.36.1",
   "license": "(Apache-2.0 OR MIT)",
   "description": "CLI for building for and deploying to The Graph",
   "dependencies": {
+    "@float-capital/float-subgraph-uncrashable": "^0.0.0-alpha.4",
     "assemblyscript": "0.19.10",
     "binary-install-raw": "0.0.13",
     "chalk": "3.0.0",
@@ -11,10 +12,9 @@
     "debug": "4.3.1",
     "docker-compose": "0.23.4",
     "dockerode": "2.5.8",
-    "@float-capital/float-subgraph-uncrashable": "^0.0.0-alpha.4",
     "fs-extra": "9.0.0",
     "glob": "7.1.6",
-    "gluegun": "https://github.com/edgeandnode/gluegun#v4.3.1-pin-colors-dep",
+    "gluegun": "4.7.1",
     "graphql": "15.5.0",
     "immutable": "3.8.2",
     "ipfs-http-client": "34.0.0",
@@ -45,5 +45,18 @@
     "test": "jest --verbose",
     "test:init": "jest tests/cli/init.test.js --verbose",
     "test:validation": "jest tests/cli/validation.test.js --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleros/graph-cli.git"
+  },
+  "author": "jb@kleros.io",
+  "bugs": {
+    "url": "https://github.com/kleros/graph-cli/issues"
+  },
+  "homepage": "https://github.com/kleros/graph-cli#readme",
+  "volta": {
+    "node": "16.18.1",
+    "yarn": "3.1.1"
   }
 }
